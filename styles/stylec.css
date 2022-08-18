@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-color: rgba(186, 192, 190, 0.164);
+  padding: 20px;
+  max-width: 500px;
+  margin: 10% auto;
+}
+
+.heading-title {
+  position: relative;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.heading-title::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  border: 1px solid grey;
+  top: 50%;
+  left: 0px;
+}
+
+.heading-title::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  border: 1px solid grey;
+  top: 50%;
+  right: 0px;
+}
+
+.heading-text {
+  padding: 0 0 20px 0;
+  opacity: 0.3;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.input {
+  height: 50px;
+}
+
+.mailpass {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-mailpass {
+margin: 0 0 20px 0;
+}
+
+.accept {
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.accept > a {
+  color: green;
+}
