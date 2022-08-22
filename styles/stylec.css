@@ -2,7 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   text-align: center;
-  
 }
 
 * {
@@ -24,21 +23,21 @@ body {
   font-size: 30px;
 }
 
-.heading-title::before {
-  content: "";
-  position: absolute;
-  width: 150px;
-  border: 1px solid grey;
-  top: 50%;
-  left: 0px;
-}
-
+.heading-title::before,
 .heading-title::after {
   content: "";
   position: absolute;
   width: 150px;
   border: 1px solid grey;
-  top: 50%;
+}
+
+.heading-title::before {
+  top: 35px;
+  left: 0px;
+}
+
+.heading-title::after {
+  top: 35px;
   right: 0px;
 }
 
@@ -55,6 +54,17 @@ body {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width:500px) {
+  .input-name {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .input-name:last-child {
+    margin: 0;
+  }
+  
+}
+
 .input {
   height: 50px;
 }
@@ -65,7 +75,7 @@ body {
 }
 
 .input-mailpass {
-margin: 0 0 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .accept {
@@ -73,6 +83,23 @@ margin: 0 0 20px 0;
   text-align: left;
 }
 
-.accept > a {
+a {
   color: green;
+}
+
+
+.btn {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: white;
+  color: green;
+  border: solid green;
 }
