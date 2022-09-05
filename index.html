@@ -11,27 +11,29 @@
   </head>
 
   <body>
-    <main class="main">
+    <article class="main">
       <div class="heading">
-        <h1 class="heading-title">Register</h1>
+        <h1 class="heading-title"><span class="heading-span">Register</span></h1>
         <p class="heading-text">Create your account. It's free and only takes a minute</p>
       </div>
       <form action="#">
         <div class="name">
-          <input class="input-name input" type="text" name="FirstName" placeholder="First Name" pattern="^[a-zA-Z]{3,15}$" required autofocus title="a-z, A-Z">
-          <input class="input-name input" type="text" name="LastName" placeholder="Last Name" pattern="^[a-zA-Z]{3,15}$" required title="a-z, A-Z">
+          <input class="input-name input" type="text" name="FirstName" placeholder="First Name"
+            pattern="^[a-zA-Z]{3,15}$" required autofocus title="a-z, A-Z">
+          <input class="input-name input" type="text" name="LastName" placeholder="Last Name" pattern="^[a-zA-Z]{3,15}$"
+            required title="a-z, A-Z">
         </div>
-        <div class="mailpass">
-          <input class="input-mailpass input" type="email" name="Email" placeholder="Email" required>
-          <input class="input-mailpass input" type="password" name="Password" placeholder="Password" required>
-          <input class="input-mailpass input" type="password" name="Confirm Password" placeholder="Confirm Password" required>
-          <div class="accept">
-            <label for="accept"><input id="accept" type="checkbox" name="checkbox" value="accept" required> I accept the <a href="#"> Therms of Use </a> & <a href="#">Privacy Police</a></label>
-          </div>
-          <button class="btn" type="submit">Registor Now</button>
+        <input class="input-mailpass input" type="email" name="Email" placeholder="Email" required>
+        <input class="input-mailpass input" type="password" name="Password" placeholder="Password" required>
+        <input class="input-mailpass input" type="password" name="Confirm Password" placeholder="Confirm Password"
+          required>
+        <div class="accept">
+          <label for="accept"><input id="accept" type="checkbox" name="checkbox" value="accept" required> I accept the
+            <a class="link" href="#"> Therms of Use </a> & <a class="link" href="#">Privacy Police</a></label>
         </div>
+        <button class="btn" type="submit">Registor Now</button>
       </form>
-    </main>
+    </article>
 
   </body>
 
